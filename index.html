@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spider-Man Quiz</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+
+        <h1>Spider-Man Quiz</h1>
+
+        <p>Spider-Man is one of the world's most famous and loved comic book superheroes. In addition to comics, he's been in movies, TV shows, and even video games. How much do you know about your friendly neighborhood Spider-Man? Take the quiz to find out!</p>
+
+        <p><a href="https://en.wikipedia.org/wiki/Spider-Man"> Learn more about Spider-Man</a></p>
+
+        <form id="myForm" action="form_processor.js" method="post">
+
+        <!--Question #1-->
+          <div class="form-group">
+            <label class="form-control-label" for="question1">1. Spider-Man is published by which comic book company?</label>
+            <input class="form-control" type="text" name="question1" id="question1">
+          </div>
+
+        <!--Question #2-->
+          <div class="form-group">
+            <label class= "form-control-label" for="question2">2. Spider-Man first appeared in which comic book? (Name and issue #)</label>
+            <input class="form-control" type="text" name="question2" id="question2">
+          </div>
+
+        <!--Question #3-->
+          <div class="form-group">
+            <label class="form-control-label">3. What year was Spider-Man created?</label>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question3" value="1954">1954
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question3" value="1962">1962
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question3" value="1986">1986
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="radio" name="question3" value="2002">2002
+              </label>
+            </div>
+
+          </div> <!--form-group div-->
+
+        <!--Question #4-->
+          <div class="form-group">
+            <label class="form-control-label" for="question4">4. How does Spider-Man acquire his super powers?</label>
+            <textarea class="form-control" name="question4" id="question4"></textarea>
+          </div>
+
+        <!--Question #5-->
+          <div class="form-group">
+            <label class="form-control-label" for="question5">5. What is Spider-Man's real name?</label>
+
+            <select class="form-control" name="question5" id="question5">
+              <option>Choose</option>
+              <option value="Adrian Toomes">Adrian Toomes</option>
+              <option value="Mac Gargan">Mac Gargan</option>
+              <option value="Peter Parker">Peter Parker</option>
+              <option value="Miles Warren">Mile Warren</option>
+              <option value="Eddie Brock">Eddie Brock</option>
+              <option value="Quentin Beck">Quentin Beck</option>
+            </select>
+
+          </div>
+
+        <!--Question #6-->
+          <div class="form-group">
+            <label class="form-control-label">6. Which actors have played Spider-Man in a movie?</label>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="question6" value="Christian Bale">Christian Bale
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="question6" value="Tom Holland">Tom Holland
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="question6" value="Robert Downey Jr.">Robert Downey Jr.
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="question6" value="Andrew Garfield">Andrew Garfield
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="question6" value="Tobey Macguire">Tobey Macguire
+              </label>
+            </div>
+
+            <div class="form-check">
+              <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" name="question6" value="Jamie Foxx">Jamie Foxx
+              </label>
+            </div>
+
+            <!--
+            Christian Bale
+            Tom Holland
+            Robert Downey Jr.
+            Andrew Garfield
+            Tobey MAcguire
+            Jamie Foxx
+            -->
+
+          </div> <!--form group div-->
+
+        <!--buttons-->
+          <input class="btn btn-primary" type="submit" value="Submit Answers">
+          <input class="btn btn-secondary" type="reset" value="Start Over">
+
+        </form>
+
+        <div id="showAnswers"></div>
+
+
+      </div><!--col div-->
+    </div> <!--row div-->
+  </div> <!--container div-->
+
+
+  <script src="js/form_processor.js"></script>
+</body>
+</html>
+
+<!--Questions
+
+https://en.wikipedia.org/wiki/Spider-Man
+
+1. Spider-Man is published by which comic book compnay? Text-Marvel
+2. Spider-Man first appeared in which comic book (Name and issue)? Text - Amazing Fantasy #15
+3. What year was Spider-Man created? Radio - 1962
+4. How does Spider-Man acquire his superpowers? Text area
+5. Which actors have played Spider-Man in movies? Checkboxes
+6. What is Spider-Man's real name? Select
+
+-->
